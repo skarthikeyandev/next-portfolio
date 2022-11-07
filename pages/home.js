@@ -1,5 +1,6 @@
 import React from "react";
 import { greetings } from "../Portfolio";
+import Image from 'next/image'
 
 const Profile = () => {
   
@@ -24,7 +25,7 @@ const Profile = () => {
         </ul>
       </nav>
       <div className="profile-contents">
-        <img src="https://drive.google.com/uc?export=view&id=1CVY9QS8jPvqtrEnteP5ahz7H325knpRS" alt="me" data-aos="slide-up" />
+        <Image src={require('../Images/cartoon.png')} alt="me" data-aos="slide-up" />
         <span>Hello, I'm</span>
         <h1>{greetings.name}</h1>
         <p>{greetings.professional}</p>
