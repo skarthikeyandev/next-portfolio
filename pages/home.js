@@ -16,7 +16,6 @@ const Profile = () => {
 
   return greetings && (
     <section className="profile-container">
-      
       <nav className="social">
         <ul>
           {greetings.mediaIcons.map((data, i) => {
